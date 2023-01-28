@@ -25,12 +25,14 @@ nav {
     color: #F9FAF8;
 }
 
-ul {
+nav ul {
     display: flex;
     list-style-type: none;
+    gap: 10px;
+    padding: 0;
 }
 
-li {
+nav li {
     padding: 12px;
     color: #e5e7eb;
 }
@@ -52,6 +54,10 @@ li {
 }
 
 .content-one-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
     max-width: 700px;
     padding: 20px;
 }
@@ -72,15 +78,19 @@ li {
     background-color: #3882F6;
     border-radius: 10px;
     color: white;
-    padding: 14px;
-    
+    padding: 10px 10px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .content-one-right {
     display: flex;
+    flex-shrink: 0;
     background-color: gray;
     align-items: center;
-    min-width: 500px;
+    width: 500px;
+    height: 282px;
     justify-content: center;
     padding: 24px;
     margin: 20px;
@@ -97,23 +107,32 @@ li {
 .content-two {
     display: flex;
     flex-direction: column;
-    margin: 0px 200px;
+    margin: 100px 200px;
+    margin-top: 0px;
 }
 
-.content-two h1 {
+.content-two-head {
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding: 30px;
+    margin: 30px;
 }
 
 .container-card {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
     text-align: center;
 }
@@ -122,6 +141,8 @@ li {
     border: solid 5px #3882F6;
     border-radius: 10px;
     padding: 48px;
+    height: 100px;
+    width: 100px;
 }
 /* ///////// */
 
@@ -168,17 +189,29 @@ li {
 
 .ads {
     display: flex;
-    flex: 1;
+    gap: 50px;
     justify-content: space-around;
     background-color: #3882F6;
     padding: 30px 70px;
     margin: 48px;
     border-radius: 7px;
+    width: 800px;
+    height: 200px;
 }
 
 .ads-left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
     color: #e5e7eb;
 }
+
+.ads-left-content h2 {
+    align-self: flex-start;
+}
+
 
 .ads-left-content p, .ads-left-content h2 {
     margin: 0;
@@ -188,19 +221,20 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
 }
 
 .content-four-button {
     display: flex;
+    justify-content: center;
     flex-shrink: 0;
     border: 2px solid #F9FAF8;
     color: #e5e7eb;
     background-color: #3882F6;
-    width: 100%;
+    width: 150px;
     padding: 10px 20px;
     border-radius: 5px;
-    font-weight: 900;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 /* ///////// */
