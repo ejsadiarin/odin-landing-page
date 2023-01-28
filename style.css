@@ -6,11 +6,16 @@ body {
 }
 
 /* HEADER SECTION */
-nav {
+header {
     background-color: #1F2937;
+}
+
+nav {
     color: white;
     display: flex;
     justify-content: space-between;
+    margin: 0px 200px;
+
 }
 
 .logo {
@@ -34,12 +39,20 @@ li {
 
 /* CONTENT ONE DIV */
 
+.content-one-div {
+    background-color: #1F2937;
+    padding: 50px;
+    padding-bottom: 70px;
+}
+
 .content-one {
     display: flex;
-    background-color: #1F2937;
+    justify-content: space-around;
+    margin: 0px 200px;
 }
 
 .content-one-left {
+    max-width: 700px;
     padding: 20px;
 }
 
@@ -67,7 +80,8 @@ li {
     display: flex;
     background-color: gray;
     align-items: center;
-    /* justify-content: center; */
+    min-width: 500px;
+    justify-content: center;
     padding: 24px;
     margin: 20px;
     text-align: center;
@@ -76,10 +90,14 @@ li {
 /* ////////// */
 
 /* CONTENT TWO DIV */
+.content-two-div {
+    background-color: #F9FAF8;
+}
 
 .content-two {
     display: flex;
     flex-direction: column;
+    margin: 0px 200px;
 }
 
 .content-two h1 {
@@ -108,12 +126,15 @@ li {
 /* ///////// */
 
 /* CONTENT THREE DIV */
+.content-three-div {
+    background-color: #e5e7eb;
+}
 
 .content-three {
     display: flex;
     flex-direction: column;
-    background-color: #e5e7eb;
     gap: 5px;
+    margin: 0px 200px;
 }
 
 .quote {
@@ -134,36 +155,52 @@ li {
 /* ///////// */
 
 /* CONTENT FOUR DIV */
+.content-four-div {
+    background-color: #F9FAF8;
+}
 
 .content-four {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0px 200px;
 }
 
 .ads {
     display: flex;
+    flex: 1;
+    justify-content: space-around;
     background-color: #3882F6;
     padding: 30px 70px;
+    margin: 48px;
+    border-radius: 7px;
 }
 
 .ads-left-content {
     color: #e5e7eb;
 }
 
+.ads-left-content p, .ads-left-content h2 {
+    margin: 0;
+}
+
 .ads-right-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 70px;
 }
 
 .content-four-button {
-    border: 1px solid #F9FAF8;
+    display: flex;
+    flex-shrink: 0;
+    border: 2px solid #F9FAF8;
     color: #e5e7eb;
     background-color: #3882F6;
-    padding: 5px 15px;
+    width: 100%;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-weight: 900;
 }
 
 /* ///////// */
